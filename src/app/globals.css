@@ -27,3 +27,72 @@ body {
 .font-inter {
   font-family: var(--font-inter);
 }
+
+.font-rancho {
+  font-family: var(--font-rancho);
+}
+
+.gradient-primary {
+  background: #1a202c;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-detail {
+  background: linear-gradient(180deg, #de4396 0%, rgba(13, 28, 159, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-purple {
+  position: relative;
+  border-radius: 8px;
+  background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+  padding: 1px;
+}
+
+.gradient-purple::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--background);
+  border-radius: 7px;
+  z-index: 0;
+}
+
+.gradient-purple > * {
+  position: relative;
+  z-index: 1;
+}
+
+.active-dot {
+  background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+  border: 1px solid #ffffff;
+}
+
+.slick-dots li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid #CBD5E0;
+}
+
+.slick-dots li button:before {
+  color: transparent !important;
+}
+
+.slick-dots .slick-active {
+  background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
