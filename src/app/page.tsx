@@ -1,6 +1,12 @@
 import { Flex } from "@chakra-ui/react";
 
-import { Banner, Footer, Header, Services } from "@/containers/layout";
+import {
+  Banner,
+  Footer,
+  Header,
+  Services,
+  TrustedSection,
+} from "@/containers/layout";
 
 export default function Home() {
   return (
@@ -15,6 +21,7 @@ export default function Home() {
       >
         <Banner />
         <Services />
+        <TrustedSection />
       </Flex>
 
       <Footer />

@@ -8,10 +8,11 @@ export const Services = () => {
       w="100%"
       align="center"
       bg="#F9F9FF"
-      pt="45px"
+      pt="50px"
       pb="85px"
+      zIndex="10"
     >
-      <Text fontSize="35px" lineHeight="35px" fontWeight="700">
+      <Text fontSize="35px" lineHeight="55px" fontWeight="700">
         Services we offer
       </Text>
 

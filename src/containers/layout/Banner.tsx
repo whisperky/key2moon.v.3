@@ -4,7 +4,7 @@ import { GradBtn } from "@/components/buttons";
 
 export const Banner = () => {
   return (
-    <Flex pt="69px" pb="106px" alignItems="center">
+    <Flex position="relative" pt="69px" pb="106px" alignItems="center">
       <Flex direction="column" gap="75px">
         <Flex direction="column" gap="28px" maxWidth="540px">
           <Text fontSize="45px" fontWeight="700" className="gradient-primary">
@@ -38,6 +38,16 @@ export const Banner = () => {
         </Flex>
       </Flex>
       <Image src="/img/web-development-1.png" objectFit="fit" />
+
+      <Flex
+        position="absolute"
+        bottom="-36px"
+        left="350px"
+        w="72px"
+        h="72px"
+        borderRadius="full"
+        bg="linear-gradient(225deg, #F76680 0%, #57007B 100%)"
+      />
     </Flex>
   );
 };
