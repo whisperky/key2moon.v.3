@@ -7,6 +7,7 @@ import Slider from "@ant-design/react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { ArrowBtn } from "../buttons";
 
 export const ImageSlider = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -38,30 +39,8 @@ export const ImageSlider = () => {
   return (
     <Flex position="relative" w="100%">
       <Flex position="absolute" top="-76px" right="100px" gap="22px">
-        <Button
-          w="45px"
-          h="45px"
-          borderRadius="50%"
-          border="2px solid #57007B"
-          color="#57007B"
-          p="11px"
-          _hover={{ bg: "#57007B80", color: "white", borderColor: "white" }}
-          onClick={slickPrev}
-        >
-          <IoMdArrowBack />
-        </Button>
-        <Button
-          w="45px"
-          h="45px"
-          borderRadius="50%"
-          color="white"
-          bg="#57007B"
-          p="11px"
-          _hover={{ bg: "#57007B80", color: "white", borderColor: "#57007B80" }}
-          onClick={slickNext}
-        >
-          <IoMdArrowForward />
-        </Button>
+        <ArrowBtn onClick={slickPrev} arrowMode="left" />
+        <ArrowBtn onClick={slickNext} arrowMode="right" />
       </Flex>
       <Slider
         ref={sliderRef}

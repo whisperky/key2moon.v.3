@@ -62,3 +62,48 @@ export const slides: SlideProps[] = [
     },
   },
 ];
+
+export interface CustomerProps {
+  name: string;
+  role: string;
+  avatar: string;
+  description: string;
+}
+
+export const customers: CustomerProps[] = [
+  {
+    name: "Romeena De Silva",
+    role: "Jonet Cosmetics",
+    avatar: "/img/avatars/avatar-1.png",
+    description:
+      "Without any doubt I recommend KeY2Moon Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t be hesitated to introduce their work to someone else.",
+  },
+  {
+    name: "Rajesh Kumar",
+    role: "CEO, The Tech Hub",
+    avatar: "/img/avatars/avatar-2.png",
+    description:
+      "Without any doubt I recommend KeY2Moon Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far.",
+  },
+  {
+    name: "Maria Smith",
+    role: "CEO, The Health Hub",
+    avatar: "/img/avatars/avatar-3.png",
+    description:
+      "Without any doubt I recommend KeY2Moon Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t be hesitated to introduce their work to someone else.",
+  },
+  {
+    name: "John Doe",
+    role: "Software Engineer",
+    avatar: "/img/avatars/avatar-4.png",
+    description:
+      "Without any doubt I recommend KeY2Moon Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t be hesitated to introduce their work to someone else.",
+  },
+  {
+    name: "Imran Khan",
+    role: "Software Engineer",
+    avatar: "/img/avatars/avatar-5.png",
+    description:
+      "Without any doubt I recommend KeY2Moon Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t be hesitated to introduce their work to someone else.",
+  },
+];
