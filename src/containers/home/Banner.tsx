@@ -1,6 +1,7 @@
 import { Flex, Text, Image } from "@chakra-ui/react";
 
 import { GradBtn } from "@/components/buttons";
+import { GradCircle } from "@/components/icons/GradCircle";
 
 export const Banner = () => {
   return (
@@ -39,15 +40,7 @@ export const Banner = () => {
       </Flex>
       <Image src="/img/web-development-1.png" objectFit="fit" />
 
-      <Flex
-        position="absolute"
-        bottom="-36px"
-        left="350px"
-        w="72px"
-        h="72px"
-        borderRadius="full"
-        bg="linear-gradient(225deg, #F76680 0%, #57007B 100%)"
-      />
+      <GradCircle bottom="-36px" left="350px" />
     </Flex>
   );
 };

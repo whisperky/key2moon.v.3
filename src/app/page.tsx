@@ -1,12 +1,13 @@
 import { Flex } from "@chakra-ui/react";
 
+import { Header, Footer } from "@/containers/layout";
 import {
   Banner,
-  Footer,
-  Header,
   Services,
   TrustedSection,
-} from "@/containers/layout";
+  RecommendSection,
+  ImpactSection,
+} from "@/containers/home";
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
         <Banner />
         <Services />
         <TrustedSection />
+        <RecommendSection />
+        <ImpactSection />
       </Flex>
 
       <Footer />

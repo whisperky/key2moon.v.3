@@ -19,9 +19,10 @@ export const CardSlider = () => {
     dots: true,
     dotsClass: "slick-dots slick-thumb",
     infinite: true,
+    arrows: false,
     className: "center",
     centerMode: true,
-    centerPadding: "353px",
+    centerPadding: "203px",
     speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -65,7 +66,7 @@ export const CardSlider = () => {
     afterChange: (current: number) => setActiveSlide(current),
   };
   return (
-    <Slider {...settings} className="slider-container w-[96vw] h-[430px]">
+    <Slider {...settings} className="slider-container w-full h-[430px]">
       {slides.map((slide, i) => (
         <ServiceCard
           key={slide.title}
