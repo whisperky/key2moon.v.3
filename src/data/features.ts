@@ -9,6 +9,59 @@ export interface SlideProps {
   isActive?: boolean;
 }
 
+export interface StudyProps {
+  title: string;
+  description: string;
+  image: string;
+  color: string;
+}
+
+
+export interface CustomerProps {
+  name: string;
+  role: string;
+  avatar: string;
+  description: string;
+}
+
+export interface SolutionProps {
+  title: string;
+  description: string;
+  image: string;
+  evaluation: {
+    name: string;
+    role: string; 
+    avatar: string;
+    description: string;
+    comment: string;
+  };
+  icons: {
+    yellow: {
+      size: string;
+      top?: string;
+      left?: string;
+      right?: string;
+      bottom?: string;
+    };
+    pink: {
+      size: string;
+      bottom?: string;    
+      right?: string;
+      top?: string;
+      left?: string;
+    };
+  };
+}
+
+export interface ServiceFeatureProps {
+  title: string;
+  description: string;
+  icon: string;
+  highlight: string;
+  color1: string;
+  color2: string;
+}
+
 export const slides: SlideProps[] = [
   {
     title: "Web Design & Development",
@@ -62,14 +115,6 @@ export const slides: SlideProps[] = [
     },
   },
 ];
-
-export interface CustomerProps {
-  name: string;
-  role: string;
-  avatar: string;
-  description: string;
-}
-
 export const customers: CustomerProps[] = [
   {
     name: "Romeena De Silva",
@@ -108,12 +153,6 @@ export const customers: CustomerProps[] = [
   },
 ];
 
-export interface StudyProps {
-  title: string;
-  description: string;
-  image: string;
-  color: string;
-}
 
 export const studies: StudyProps[] = [
   {
@@ -134,4 +173,130 @@ export const studies: StudyProps[] = [
     image: "/img/studies/study-3.jpg",
     color: "#F0FFF7",
   },
+];
+
+export const solutions: SolutionProps[] = [
+  {
+    title: "Build the right team to scale",
+    description: "Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term not the case with freelancers",
+    image: "/img/solutions/solution-1.png",
+    evaluation: {
+      name: "Romeena De Silva",
+      role: "Jonet Cosmetics",
+      avatar: "/img/avatars/avatar-sm-1.png",
+      description: "Our delivery model helps you cut costs and deliver within budget.",
+      comment: "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
+    },
+    icons: {
+      yellow: {
+        size: "64px",
+        top: "-32px",
+        left: "-32px",
+      },
+      pink: {
+        size: "32px",
+        bottom: "-16px",
+        left: "50%",
+      },
+    },
+  },
+  {
+    title: "Build the right team to scale",
+    description: "Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term not the case with freelancers",
+    image: "/img/solutions/solution-2.png",
+    evaluation: {
+      name: "Romeena De Silva",
+      role: "Jonet Cosmetics",
+      avatar: "/img/avatars/avatar-sm-2.png",
+      description: "Our delivery model helps you cut costs and deliver within budget.",
+      comment: "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
+    },
+    icons: {
+      yellow: {
+        size: "64px",
+        bottom: "-32px",
+        left: "20%",
+      },
+      pink: {
+        size: "32px",
+        top: "-12px",
+        right: "-12px",
+      },
+    },
+  },
+  {
+    title: "Build the right team to scale",
+    description: "Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term not the case with freelancers",
+    image: "/img/solutions/solution-3.png",
+    evaluation: {
+      name: "Romeena De Silva",
+      role: "Jonet Cosmetics",
+      avatar: "/img/avatars/avatar-sm-3.png",
+      description: "Our delivery model helps you cut costs and deliver within budget.",
+      comment: "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
+    },
+    icons: {
+      yellow: {
+        size: "39px",
+        bottom: "-16px",
+        left: "-16px",
+      },
+      pink: {
+        size: "39px",
+        top: "-16px",
+        left: "50%",
+      },
+    },
+  },
+];
+
+export const serviceFeatures: ServiceFeatureProps[] = [
+  {
+    title: "UX Driven Engineering",
+    description: "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    icon: "/img/icons/rocket.png",
+    highlight: "UX first",
+    color1: "#29272E",
+    color2: "#27272E"
+  },
+  {
+    title: "Developing Shared Understanding",
+    description: "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    icon: "/img/icons/code.png",
+    highlight: "UX first",
+    color1: "#68DBF2",
+    color2: "#509CF5"
+  },
+  {
+    title: "Proven Experience and Expertise",
+    description: "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    icon: "/img/icons/chart.png",
+    highlight: "UX first",
+    color1: "#FF92AE",
+    color2: "#FF3D9A"
+  },
+  {
+    title: "Security & Intellectual Property (IP)",
+    description: "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    icon: "/img/icons/shield.png",
+    highlight: "UX first",
+    color1: "#67E9F1",
+    color2: "#24E795"
+  },
+  {
+    title: "Code Reviews",
+    description: "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    icon: "/img/icons/check.png",
+    highlight: "UX first",
+    color1: "#FFEF5E",
+    color2: "#F7936F"
+  },
+  {
+    title: "Quality Assurance & Testing",
+    description: "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    icon: "/img/icons/cube.png",
+    highlight: "UX first",
+    color1: "#F76680",
+    color2: "#57007B"
+  }
 ];

@@ -8,6 +8,7 @@ export const Services = () => {
       w="100%"
       align="center"
       bg="#F9F9FF"
+      borderY="1px solid #E7DAED"
       pt="50px"
       pb="85px"
       zIndex="10"

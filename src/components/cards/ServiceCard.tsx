@@ -1,3 +1,5 @@
+"use client";
+
 import { Flex, Text, Icon, Card, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 

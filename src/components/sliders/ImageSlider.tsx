@@ -37,7 +37,7 @@ export const ImageSlider = () => {
     touchThreshold: 10,
   };
   return (
-    <Flex position="relative" w="100%">
+    <Flex position="relative" w="100%" borderY="1px solid #E7DAED">
       <Flex position="absolute" top="-76px" right="100px" gap="22px">
         <ArrowBtn onClick={slickPrev} arrowMode="left" />
         <ArrowBtn onClick={slickNext} arrowMode="right" />

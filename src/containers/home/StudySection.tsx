@@ -1,9 +1,10 @@
 import { Button, Flex, Text, Image } from "@chakra-ui/react";
 
 import { TitleText } from "@/components/texts";
-import { GradLine } from "@/components/icons";
+import { GradLine, ArrowUpIcon, ArrowDownIcon } from "@/components/icons";
 
 import { studies, StudyProps } from "@/data/features";
+import { StudyCard } from "@/components/cards/StudyCard";
 
 export const StudySection = () => {
   return (
@@ -12,10 +13,27 @@ export const StudySection = () => {
       w="100%"
       py="89px"
       bg="#F7F7FA"
-      borderTop="1px solid #E7DAED"
+      borderY="1px solid #E7DAED"
       px="15%"
     >
-      <Flex direction="column" alignItems="center" justifyContent="center">
+      <Flex
+        position="relative"
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Flex position="absolute" top="-200px" left="-50px" alignItems="end">
+          <ArrowUpIcon />
+          <Flex
+            w="18px"
+            h="18px"
+            bg="linear-gradient(225deg, #F76680 0%, #57007B 100%)"
+            borderRadius="50%"
+          />
+        </Flex>
+        <Flex position="absolute" top="-240px" right="-50px">
+          <ArrowDownIcon />
+        </Flex>
         <GradLine />
 
         <TitleText textAlign="center" pb="51px">
@@ -33,42 +51,7 @@ export const StudySection = () => {
         alignItems="center"
       >
         {studies.map((study, i) => (
-          <Flex
-            key={i}
-            gap="20px"
-            border="1px solid #E7DAED"
-            bg={study.color}
-            borderRadius="lg"
-          >
-            <Image
-              src={study.image}
-              alt={study.title}
-              w="600px"
-              borderRadius="lg"
-            />
-            <Flex
-              direction="column"
-              gap="10px"
-              px="51px"
-              justifyContent="center"
-            >
-              <Text fontSize="28px" fontWeight="600" lineHeight="38px">
-                {study.title}
-              </Text>
-              <Text
-                fontSize="14px"
-                fontWeight="400"
-                lineHeight="23px"
-                py="30px"
-              >
-                {study.description}
-              </Text>
-
-              <Flex justifyContent="flex-end" pt="30px">
-                <Button className="gradient-detail">Read More &gt;</Button>
-              </Flex>
-            </Flex>
-          </Flex>
+          <StudyCard study={study} key={i} />
         ))}
       </Flex>
 

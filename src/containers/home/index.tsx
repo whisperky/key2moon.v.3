@@ -4,3 +4,5 @@ export { TrustedSection } from "./TrustedSection";
 export { RecommendSection } from "./RecommendSection";
 export { ImpactSection } from "./ImpactSection";
 export { StudySection } from "./StudySection";
+export { SolutionsSection } from "./SolutionsSection";
+export { ApproachSection } from "./ApproachSection";
