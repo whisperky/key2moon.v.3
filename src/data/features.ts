@@ -107,3 +107,31 @@ export const customers: CustomerProps[] = [
       "Without any doubt I recommend KeY2Moon Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t be hesitated to introduce their work to someone else.",
   },
 ];
+
+export interface StudyProps {
+  title: string;
+  description: string;
+  image: string;
+  color: string;
+}
+
+export const studies: StudyProps[] = [
+  {
+    title: "Website Design for SCFC Canada",
+    description: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
+    image: "/img/studies/study-1.jpg",
+    color: "#E7DAED",
+  },
+  {
+    title: "Website Design for SCFC Canada",
+    description: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
+    image: "/img/studies/study-2.jpg",
+    color: "#F1F2FF",
+  },
+  {
+    title: "Website Design for SCFC Canada",
+    description: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
+    image: "/img/studies/study-3.jpg",
+    color: "#F0FFF7",
+  },
+];

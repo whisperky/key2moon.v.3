@@ -40,8 +40,16 @@ body {
   color: transparent;
 }
 
+.gradient-title {
+  background: linear-gradient(180deg, #de4396 0%, rgba(13, 28, 159, 0.2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
 .gradient-detail {
-  background: linear-gradient(180deg, #de4396 0%, rgba(13, 28, 159, 0) 100%);
+  background: linear-gradient(180deg, #f76680 0%, #57007b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -78,7 +86,7 @@ body {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  border: 1px solid #CBD5E0;
+  border: 1px solid #cbd5e0;
 }
 
 .slick-dots li button:before {

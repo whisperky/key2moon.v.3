@@ -7,6 +7,7 @@ import {
   TrustedSection,
   RecommendSection,
   ImpactSection,
+  StudySection,
 } from "@/containers/home";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <TrustedSection />
         <RecommendSection />
         <ImpactSection />
+        <StudySection />
       </Flex>
 
       <Footer />

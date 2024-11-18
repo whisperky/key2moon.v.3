@@ -12,7 +12,7 @@ export const Banner = () => {
             <Text as="span" fontWeight="300">
               Creative
             </Text>{" "}
-            <Text as="span" className="gradient-detail">
+            <Text as="span" className="gradient-title">
               {" "}
               Web3
             </Text>{" "}
@@ -20,7 +20,7 @@ export const Banner = () => {
               Agency{" "}
             </Text>
             <Text as="span">for your next </Text>{" "}
-            <Text as="span" className="gradient-detail">
+            <Text as="span" className="gradient-title">
               Project
             </Text>
           </Text>
