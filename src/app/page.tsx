@@ -10,6 +10,8 @@ import {
   StudySection,
   SolutionsSection,
   ApproachSection,
+  TechSection,
+  WorkflowSection,
 } from "@/containers/home";
 
 export default function Home() {
@@ -31,6 +33,8 @@ export default function Home() {
         <StudySection />
         <SolutionsSection />
         <ApproachSection />
+        <TechSection />
+        <WorkflowSection />
       </Flex>
 
       <Footer />

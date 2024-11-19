@@ -6,3 +6,5 @@ export { ImpactSection } from "./ImpactSection";
 export { StudySection } from "./StudySection";
 export { SolutionsSection } from "./SolutionsSection";
 export { ApproachSection } from "./ApproachSection";
+export { TechSection } from "./TechSection";
+export { WorkflowSection } from "./WorkflowSection";

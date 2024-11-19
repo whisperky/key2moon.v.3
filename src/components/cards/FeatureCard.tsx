@@ -1,4 +1,4 @@
-import { Flex, VStack, Text, Image } from "@chakra-ui/react";
+import { Flex, Text, Image, Highlight } from "@chakra-ui/react";
 import type { ServiceFeatureProps } from "@/data/features";
 
 interface FeatureCardProps {
@@ -40,16 +40,15 @@ export const FeatureCard = ({ feature }: FeatureCardProps) => {
           lineHeight="23px"
           color="#4A5568"
         >
-          {parts.map((part, index) => (
-            <>
-              {part}
-              {index < parts.length - 1 && (
-                <Text as="span" color={color1} fontWeight="medium">
-                  {highlight}
-                </Text>
-              )}
-            </>
-          ))}
+          <Highlight
+            query={highlight}
+            styles={{
+              color: color1,
+              fontWeight: "medium",
+            }}
+          >
+            {description}
+          </Highlight>
         </Text>
       </Flex>
     </Flex>
