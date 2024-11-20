@@ -68,6 +68,12 @@ export interface ProcessStepProps {
   description: string;
 }
 
+export interface ResourceProps {
+  title: string;
+  description: string;
+  image: string;
+}
+
 export const slides: SlideProps[] = [
   {
     title: "Web Design & Development",
@@ -337,5 +343,33 @@ export const processSteps: ProcessStepProps[] = [
     id: "#6",
     title: "Iterative delivery",
     description: "We divide the implementation process into several checkpoints rather than a single deadline.",
+  },
+];
+
+export const resources: ResourceProps[] = [
+  {
+    title: "Feature Resource",
+    description: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    image: "/img/resources/resource-1.jpg",
+  },
+  {
+    title: "Feature Resource",
+    description: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    image: "/img/resources/resource-2.jpg",
+  },
+  {
+    title: "Feature Resource",
+    description: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    image: "/img/resources/resource-3.jpg",
+  },
+  {
+    title: "Feature Resource",
+    description: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    image: "/img/resources/resource-4.jpg",
+  },
+  {
+    title: "Feature Resource",
+    description: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    image: "/img/resources/resource-5.jpg",
   },
 ];

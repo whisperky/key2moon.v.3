@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Flex, Text } from "@chakra-ui/react";
 import Slider from "@ant-design/react-slick";
 
@@ -15,16 +15,41 @@ import "slick-carousel/slick/slick-theme.css";
 export const CardSlider = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
+  useEffect(() => {
+    console.log(activeSlide);
+  }, [activeSlide]);
+
   var settings = {
     dots: true,
     dotsClass: "slick-dots slick-thumb",
     infinite: true,
     arrows: false,
     className: "center",
+    responsive: [
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "150px",
+        },
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "0px",
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "0",
+        },
+      },
+    ],
     centerMode: true,
-    centerPadding: "203px",
     speed: 800,
-    slidesToShow: 3,
     slidesToScroll: 1,
     swipeToSlide: true,
     touchThreshold: 10,
@@ -68,11 +93,9 @@ export const CardSlider = () => {
   return (
     <Slider {...settings} className="slider-container w-full h-[430px]">
       {slides.map((slide, i) => (
-        <ServiceCard
-          key={slide.title}
-          {...slide}
-          isActive={activeSlide === i}
-        />
+        <Flex key={i}>
+          <ServiceCard {...slide} isActive={activeSlide === i} />
+        </Flex>
       ))}
     </Slider>
   );

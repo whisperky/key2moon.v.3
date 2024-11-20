@@ -1,10 +1,12 @@
+export { ApproachSection } from "./ApproachSection";
 export { Banner } from "./Banner";
-export { Services } from "./Services";
-export { TrustedSection } from "./TrustedSection";
-export { RecommendSection } from "./RecommendSection";
+export { HireSection } from "./HireSection";
 export { ImpactSection } from "./ImpactSection";
+export { RecommendSection } from "./RecommendSection";
+export { ResourceSection } from "./ResourceSection";
 export { StudySection } from "./StudySection";
 export { SolutionsSection } from "./SolutionsSection";
-export { ApproachSection } from "./ApproachSection";
+export { Services } from "./Services";
 export { TechSection } from "./TechSection";
+export { TrustedSection } from "./TrustedSection";
 export { WorkflowSection } from "./WorkflowSection";

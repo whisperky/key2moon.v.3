@@ -12,6 +12,8 @@ import {
   ApproachSection,
   TechSection,
   WorkflowSection,
+  ResourceSection,
+  HireSection,
 } from "@/containers/home";
 
 export default function Home() {
@@ -35,6 +37,8 @@ export default function Home() {
         <ApproachSection />
         <TechSection />
         <WorkflowSection />
+        <ResourceSection />
+        <HireSection />
       </Flex>
 
       <Footer />

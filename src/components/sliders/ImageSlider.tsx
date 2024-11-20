@@ -1,13 +1,13 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Flex, Text, Image, Icon, Button } from "@chakra-ui/react";
-import { IoMdArrowForward, IoMdArrowBack } from "react-icons/io";
+import { Flex, Image } from "@chakra-ui/react";
 import Slider from "@ant-design/react-slick";
+
+import { ArrowBtn } from "@/components/buttons";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ArrowBtn } from "../buttons";
 
 export const ImageSlider = () => {
   const [activeSlide, setActiveSlide] = useState(0);
