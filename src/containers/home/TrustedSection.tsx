@@ -11,7 +11,7 @@ import { TitleText } from "@/components/texts";
 export const TrustedSection: React.FC = () => {
   return (
     <Flex
-      direction={{ base: "column", md: "row" }}
+      direction={{ base: "column", xl: "row" }}
       position="relative"
       align="center"
       justify="space-between"
@@ -19,12 +19,18 @@ export const TrustedSection: React.FC = () => {
       mt="15px"
       py="167px"
       px={{ base: 6, md: 20 }}
-      gap={24}
+      gap={{ base: 12, xl: 24 }}
       bg="white"
       borderRadius="lg"
     >
       {/* Left Text Section */}
-      <Flex direction="column" maxW="535px" mb={{ base: 8, md: 0 }}>
+      <Flex
+        direction="column"
+        maxW="535px"
+        mb={{ base: 8, md: 0 }}
+        justifyContent={{ base: "center", md: "flex-start" }}
+        alignItems={{ base: "center", md: "flex-start" }}
+      >
         <GradLine />
         <TitleText>
           Leading companies trust us{" "}
@@ -43,7 +49,7 @@ export const TrustedSection: React.FC = () => {
           <Text as="span" color="#F76680">
             add development capacity
           </Text>{" "}
-          to tech teams. Our value isn't limited to building teams but is
+          to tech teams. Our value isn&apos;t limited to building teams but is
           equally distributed across the project lifecycle. We are a custom
           software development company that guarantees the successful delivery
           of your project.
@@ -63,7 +69,7 @@ export const TrustedSection: React.FC = () => {
       {/* Right Video Section */}
       <Flex
         position="relative"
-        width={{ base: "100%", md: "45%" }}
+        width={{ base: "100%", xl: "45%" }}
         align="center"
         justify="center"
       >

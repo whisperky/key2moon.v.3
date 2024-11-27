@@ -4,9 +4,9 @@ import { ResourceSlider } from "@/components/sliders";
 import { GradLine } from "@/components/icons";
 import { TitleText } from "@/components/texts";
 
-export const ResourceSection = () => {
+export const ResourceSection = ({ id }: { id: string }) => {
   return (
-    <Flex direction="column" w="100%" py="89px">
+    <Flex direction="column" w="100%" py="89px" id={id}>
       <Flex
         position="relative"
         direction="column"

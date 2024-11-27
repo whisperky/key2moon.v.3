@@ -1,9 +1,10 @@
 import { Flex, Text } from "@chakra-ui/react";
 import { CardSlider } from "@/components/sliders";
 
-export const Services = () => {
+export const Services = ({ id }: { id: string }) => {
   return (
     <Flex
+      id={id}
       direction="column"
       w="100%"
       align="center"

@@ -13,12 +13,12 @@ export const ArrowBtn = ({
 }: ArrowBtnProps) => {
   return (
     <Button
-      w="45px"
-      h="45px"
+      w={{ base: "30px", lg: "45px" }}
+      h={{ base: "30px", lg: "45px" }}
       borderRadius="50%"
       border="2px solid #57007B"
       color="#57007B"
-      p="11px"
+      p={{ base: "18px", lg: "11px" }}
       _hover={{
         bg: "#57007B",
         color: "white",

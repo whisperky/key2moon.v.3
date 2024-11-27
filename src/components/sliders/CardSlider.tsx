@@ -19,7 +19,7 @@ export const CardSlider = () => {
     console.log(activeSlide);
   }, [activeSlide]);
 
-  var settings = {
+  const settings = {
     dots: true,
     dotsClass: "slick-dots slick-thumb",
     infinite: true,
@@ -27,7 +27,7 @@ export const CardSlider = () => {
     className: "center",
     responsive: [
       {
-        breakpoint: 1920,
+        breakpoint: 1921,
         settings: {
           slidesToShow: 3,
           centerPadding: "150px",
@@ -44,7 +44,14 @@ export const CardSlider = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 1,
-          centerPadding: "0",
+          centerPadding: "220px",
+        },
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "0px",
         },
       },
     ],
@@ -53,12 +60,18 @@ export const CardSlider = () => {
     slidesToScroll: 1,
     swipeToSlide: true,
     touchThreshold: 10,
-    appendDots: (dots: any) => (
+    appendDots: (dots: React.ReactNode) => (
       <Flex justifyContent="space-between" width="100%">
         <Flex flex="1" justifyContent="center">
           <ul style={{ margin: "0px" }}> {dots} </ul>
         </Flex>
-        <Flex position="absolute" right="100px" alignItems="center" gap="10px">
+        <Flex
+          position="absolute"
+          right="100px"
+          alignItems="cente\r"
+          gap="10px"
+          display={{ base: "none", md: "flex" }}
+        >
           <Text
             fontSize="16px"
             fontWeight="500"

@@ -16,13 +16,13 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-const rubik = Rubik({
-  subsets: ["latin"],
-  variable: "--font-rubik",
-});
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+});
+const rubik = Rubik({
+  subsets: ["latin"],
+  variable: "--font-rubik",
 });
 const rancho = Rancho({
   subsets: ["latin"],

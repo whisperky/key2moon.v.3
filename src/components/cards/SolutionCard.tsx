@@ -10,7 +10,13 @@ interface SolutionCardProps {
 
 export const SolutionCard = ({ solution, index }: SolutionCardProps) => {
   return (
-    <Flex direction={index % 2 === 0 ? "row" : "row-reverse"} gap="124px">
+    <Flex
+      direction={{
+        base: "column",
+        lg: index % 2 === 0 ? "row" : "row-reverse",
+      }}
+      gap={{ sm: "10px", md: "50px", lg: "124px" }}
+    >
       <Flex direction="column" gap="20px" justifyContent="center">
         <Text fontSize="28px" fontWeight="600" lineHeight="38px">
           {solution.title}
@@ -31,7 +37,7 @@ export const SolutionCard = ({ solution, index }: SolutionCardProps) => {
               maxW="453px"
               className="gradient-detail"
             >
-              "{solution.evaluation.comment}"
+              &quot;{solution.evaluation.comment}&quot;
             </Text>
           </Flex>
           <Flex alignItems="center" gap="10px">
@@ -66,7 +72,7 @@ export const SolutionCard = ({ solution, index }: SolutionCardProps) => {
 
       <Flex
         position="relative"
-        w="575px"
+        w={{ base: "100%", md: "575px" }}
         justifyContent="center"
         alignItems="center"
       >

@@ -8,9 +8,6 @@ interface FeatureCardProps {
 export const FeatureCard = ({ feature }: FeatureCardProps) => {
   const { title, description, icon, highlight, color1, color2 } = feature;
 
-  // Split description to highlight specific text
-  const parts = description.split(highlight);
-
   return (
     <Flex
       p="59px 33px 39px 33px"
