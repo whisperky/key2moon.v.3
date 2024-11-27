@@ -16,7 +16,6 @@ export interface StudyProps {
   color: string;
 }
 
-
 export interface CustomerProps {
   name: string;
   role: string;
@@ -30,7 +29,7 @@ export interface SolutionProps {
   image: string;
   evaluation: {
     name: string;
-    role: string; 
+    role: string;
     avatar: string;
     description: string;
     comment: string;
@@ -45,7 +44,7 @@ export interface SolutionProps {
     };
     pink: {
       size: string;
-      bottom?: string;    
+      bottom?: string;
       right?: string;
       top?: string;
       left?: string;
@@ -76,112 +75,115 @@ export interface ResourceProps {
 
 export const slides: SlideProps[] = [
   {
-    title: "Web Design & Development",
+    title: "Smart Contract Development",
     description:
-      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+      "We specialize in developing secure and efficient smart contracts for DeFi protocols, NFT marketplaces, and decentralized applications. Our expertise ensures your blockchain solutions are reliable and scalable.",
     icon: {
       src: "/img/icons/code.png",
-      alt: "Web Design & Development",
+      alt: "Smart Contract Development",
       p: "12px",
     },
     isActive: true,
   },
   {
-    title: "Software Testing Service",
+    title: "DeFi Protocol Development",
     description:
-      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+      "We design and implement secure DeFi protocols, from AMMs to lending platforms. Our comprehensive solutions prioritize security, efficiency, and user experience while ensuring robust tokenomics and market stability.",
     icon: {
       src: "/img/icons/dashboard.png",
-      alt: "Software Testing Service",
+      alt: "DeFi Protocol Development",
       p: "13px",
     },
   },
   {
-    title: "Web Design & Development",
+    title: "NFT Platform Development",
     description:
-      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+      "We deliver end-to-end NFT marketplace solutions with advanced features like lazy minting, royalty management, and multi-chain support. Our platforms ensure secure trading and optimal user experience.",
     icon: {
       src: "/img/icons/code.png",
-      alt: "Web Design & Development",
-      p: "12px",
-    },
-  },
-  { 
-    title: "Web Design & Development",
-    description:
-      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
-    icon: {
-      src: "/img/icons/code.png",
-      alt: "Web Design & Development",
+      alt: "NFT Platform Development",
       p: "12px",
     },
   },
   {
-    title: "Mobile App Development",
+    title: "Web3 Integration Services",
     description:
-      "A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.",
+      "We seamlessly integrate Web3 capabilities into existing systems, enabling businesses to leverage blockchain technology. Our solutions ensure smooth transitions while maintaining security and performance.",
+    icon: {
+      src: "/img/icons/code.png",
+      alt: "Web3 Integration Services",
+      p: "12px",
+    },
+  },
+  {
+    title: "dApp Development",
+    description:
+      "We create sophisticated decentralized applications that harness blockchain's full potential. Our dApps feature intuitive interfaces, robust smart contracts, and seamless Web3 wallet integration.",
     icon: {
       src: "/img/icons/mobile.png",
-      alt: "Mobile App Development",
+      alt: "dApp Development",
       p: "8px",
     },
   },
 ];
+
 export const customers: CustomerProps[] = [
   {
-    name: "Romeena De Silva",
-    role: "Jonet Cosmetics",
+    name: "Alex Thompson",
+    role: "CTO, DeFiTrade Protocol",
     avatar: "/img/avatars/avatar-1.png",
     description:
-      "Without any doubt I recommend KeY2Moon Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t be hesitated to introduce their work to someone else.",
+      "Key2Moon Solutions delivered exceptional smart contract development for our DeFi protocol. Their expertise in blockchain security and optimization was crucial to our successful launch. They're truly leaders in the Web3 space.",
   },
   {
-    name: "Rajesh Kumar",
-    role: "CEO, The Tech Hub",
+    name: "Sarah Chen",
+    role: "Founder, NFT Marketplace",
     avatar: "/img/avatars/avatar-2.png",
     description:
-      "Without any doubt I recommend KeY2Moon Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far.",
+      "Working with Key2Moon Solutions transformed our NFT platform vision into reality. Their deep understanding of blockchain technology and NFT standards helped us create a seamless marketplace that our users love.",
   },
   {
-    name: "Maria Smith",
-    role: "CEO, The Health Hub",
+    name: "Michael Rodriguez",
+    role: "CEO, BlockFin Solutions",
     avatar: "/img/avatars/avatar-3.png",
     description:
-      "Without any doubt I recommend KeY2Moon Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t be hesitated to introduce their work to someone else.",
+      "Key2Moon Solutions expertly guided our transition from traditional finance to Web3. Their team's technical expertise and professional approach made the integration process smooth and efficient.",
   },
   {
-    name: "John Doe",
-    role: "Software Engineer",
+    name: "Lisa Wang",
+    role: "Lead Developer, GameFi Project",
     avatar: "/img/avatars/avatar-4.png",
     description:
-      "Without any doubt I recommend KeY2Moon Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t be hesitated to introduce their work to someone else.",
+      "The team at Key2Moon Solutions demonstrated exceptional skill in developing our GameFi smart contracts. Their attention to security and performance optimization exceeded our expectations.",
   },
   {
-    name: "Imran Khan",
-    role: "Software Engineer",
+    name: "David Park",
+    role: "CTO, Blockchain Enterprise",
     avatar: "/img/avatars/avatar-5.png",
     description:
-      "Without any doubt I recommend KeY2Moon Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve come across so far. Wouldn’t be hesitated to introduce their work to someone else.",
+      "Key2Moon Solutions provided outstanding blockchain consulting and development services. Their expertise in cross-chain solutions and enterprise integration made them the perfect partner for our project.",
   },
 ];
 
-
 export const studies: StudyProps[] = [
   {
-    title: "Website Design for SCFC Canada",
-    description: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
+    title: "DeFi Protocol Development for TokenSwap",
+    description:
+      "Developed a cutting-edge decentralized exchange protocol featuring automated market making (AMM) and yield farming capabilities. The protocol processes over $10M in daily trading volume and has attracted more than 50,000 unique users. Our implementation included innovative features like flash loans, multi-token pools, and advanced security measures to protect user funds.",
     image: "/img/studies/study-1.jpg",
     color: "#E7DAED",
   },
   {
-    title: "Website Design for SCFC Canada",
-    description: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
+    title: "NFT Marketplace for Digital Artists",
+    description:
+      "Created a specialized NFT marketplace that enables artists to mint, showcase, and trade their digital artworks. The platform features lazy minting, royalty distribution, and cross-chain compatibility. Since launch, the marketplace has facilitated over 100,000 NFT transactions and helped artists earn more than $5M in primary and secondary sales.",
     image: "/img/studies/study-2.jpg",
     color: "#F1F2FF",
   },
   {
-    title: "Website Design for SCFC Canada",
-    description: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
+    title: "Web3 Integration for Enterprise",
+    description:
+      "Helped a traditional finance company transition to Web3 by implementing blockchain-based identity verification and asset tokenization. The solution reduced KYC processing time by 80% and enabled secure, transparent tracking of digital assets. The platform now handles over 1 million tokenized assets and serves 200,000+ users globally.",
     image: "/img/studies/study-3.jpg",
     color: "#F0FFF7",
   },
@@ -189,15 +191,18 @@ export const studies: StudyProps[] = [
 
 export const solutions: SolutionProps[] = [
   {
-    title: "Build the right team to scale",
-    description: "Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term not the case with freelancers",
+    title: "Expert Blockchain Development Team",
+    description:
+      "Access our specialized team of blockchain developers, smart contract auditors, and Web3 architects. We bring years of DeFi and NFT development experience to ensure your project's success in the decentralized ecosystem.",
     image: "/img/solutions/solution-1.png",
     evaluation: {
-      name: "Romeena De Silva",
-      role: "Jonet Cosmetics",
+      name: "Alex Chen",
+      role: "CTO, DeFiTrade",
       avatar: "/img/avatars/avatar-sm-1.png",
-      description: "Our delivery model helps you cut costs and deliver within budget.",
-      comment: "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
+      description:
+        "Their blockchain expertise helped us launch our DeFi protocol ahead of schedule.",
+      comment:
+        "Key2Moon's smart contract development team delivered exceptional quality. Their security-first approach and deep understanding of DeFi mechanics were crucial to our success.",
     },
     icons: {
       yellow: {
@@ -213,15 +218,17 @@ export const solutions: SolutionProps[] = [
     },
   },
   {
-    title: "Build the right team to scale",
-    description: "Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term not the case with freelancers",
+    title: "Comprehensive Web3 Solutions",
+    description:
+      "From smart contract development to full-stack dApp implementation, we provide end-to-end Web3 solutions. Our expertise spans multiple blockchain networks, ensuring your project leverages the best technology stack.",
     image: "/img/solutions/solution-2.png",
     evaluation: {
-      name: "Romeena De Silva",
-      role: "Jonet Cosmetics",
+      name: "Sarah Johnson",
+      role: "Founder, NFTArtSpace",
       avatar: "/img/avatars/avatar-sm-2.png",
-      description: "Our delivery model helps you cut costs and deliver within budget.",
-      comment: "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
+      description: "They transformed our NFT marketplace vision into reality.",
+      comment:
+        "Key2Moon delivered a robust NFT platform that exceeded our expectations. Their technical expertise in smart contracts and frontend development created a seamless user experience.",
     },
     icons: {
       yellow: {
@@ -237,15 +244,18 @@ export const solutions: SolutionProps[] = [
     },
   },
   {
-    title: "Build the right team to scale",
-    description: "Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term not the case with freelancers",
+    title: "Enterprise Blockchain Integration",
+    description:
+      "We help traditional businesses transition to Web3 with minimal disruption. Our team specializes in integrating blockchain solutions with existing systems while ensuring security and scalability.",
     image: "/img/solutions/solution-3.png",
     evaluation: {
-      name: "Romeena De Silva",
-      role: "Jonet Cosmetics",
+      name: "Michael Rodriguez",
+      role: "CEO, FinTech Solutions",
       avatar: "/img/avatars/avatar-sm-3.png",
-      description: "Our delivery model helps you cut costs and deliver within budget.",
-      comment: "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules",
+      description:
+        "Seamless integration of blockchain technology into our existing infrastructure.",
+      comment:
+        "Key2Moon's expertise in both traditional and blockchain technologies made our transition to Web3 smooth and efficient. Their team's guidance was invaluable throughout the process.",
     },
     icons: {
       yellow: {
@@ -264,112 +274,129 @@ export const solutions: SolutionProps[] = [
 
 export const serviceFeatures: ServiceFeatureProps[] = [
   {
-    title: "UX Driven Engineering",
-    description: "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    title: "Web3 First Development",
+    description:
+      "As blockchain specialists, we prioritize Web3 integration from day one. Our projects are driven by experienced blockchain developers who ensure seamless integration with modern Web3 technologies.",
     icon: "/img/icons/rocket.png",
-    highlight: "UX first",
+    highlight: "Web3 first",
     color1: "#29272E",
-    color2: "#27272E"
+    color2: "#27272E",
   },
   {
-    title: "Developing Shared Understanding",
-    description: "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    title: "Smart Contract Development",
+    description:
+      "Our team specializes in writing secure, efficient smart contracts. We follow best practices and conduct thorough audits to ensure your blockchain applications are reliable and scalable.",
     icon: "/img/icons/code.png",
-    highlight: "UX first",
+    highlight: "Security first",
     color1: "#68DBF2",
-    color2: "#509CF5"
+    color2: "#509CF5",
   },
   {
-    title: "Proven Experience and Expertise",
-    description: "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    title: "DeFi & NFT Expertise",
+    description:
+      "With deep experience in DeFi protocols and NFT marketplaces, we help you navigate the complexities of decentralized finance and digital asset management.",
     icon: "/img/icons/chart.png",
-    highlight: "UX first",
+    highlight: "DeFi experts",
     color1: "#FF92AE",
-    color2: "#FF3D9A"
+    color2: "#FF3D9A",
   },
   {
-    title: "Security & Intellectual Property (IP)",
-    description: "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    title: "Blockchain Security",
+    description:
+      "Security is paramount in blockchain development. Our comprehensive security measures include smart contract audits, penetration testing, and secure key management protocols.",
     icon: "/img/icons/shield.png",
-    highlight: "UX first",
+    highlight: "Security",
     color1: "#67E9F1",
-    color2: "#24E795"
+    color2: "#24E795",
   },
   {
-    title: "Code Reviews",
-    description: "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    title: "Cross-chain Solutions",
+    description:
+      "We build bridges between different blockchain networks, enabling seamless interoperability and expanding your project's reach across multiple chains.",
     icon: "/img/icons/check.png",
-    highlight: "UX first",
+    highlight: "Multi-chain",
     color1: "#FFEF5E",
-    color2: "#F7936F"
+    color2: "#F7936F",
   },
   {
-    title: "Quality Assurance & Testing",
-    description: "Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.",
+    title: "Web3 Integration Services",
+    description:
+      "We help traditional businesses transition to Web3, integrating blockchain technology with existing systems while ensuring optimal performance and user experience.",
     icon: "/img/icons/cube.png",
-    highlight: "UX first",
+    highlight: "Integration",
     color1: "#F76680",
-    color2: "#57007B"
-  }
+    color2: "#57007B",
+  },
 ];
 
 export const processSteps: ProcessStepProps[] = [
   {
     id: "#1",
-    title: "Assemble the right team",
-    description: "We handle all aspects of vetting and choosing the right team that you don't have the time, expertise, or desire to do.",
+    title: "Requirements Analysis",
+    description:
+      "We thoroughly analyze your blockchain needs, token economics, and technical requirements to create a comprehensive development strategy.",
   },
   {
     id: "#2",
-    title: "Sprint planning",
-    description: "Sprint roadmap is a collective planning effort. Team members collaborate to clarify items and ensure shared understanding.",
+    title: "Architecture Design",
+    description:
+      "We design the optimal blockchain architecture by selecting appropriate protocols and frameworks to ensure scalability and security.",
   },
   {
     id: "#3",
-    title: "Tech architecture",
-    description: "We break monolithic apps into microservices. Decoupling the code allows teams to move faster and more independently",
+    title: "Smart Contract",
+    description:
+      "Our team develops secure and efficient smart contracts using industry best practices and proven design patterns for robust solutions.",
   },
   {
     id: "#4",
-    title: "Standups & weekly demos",
-    description: "Standups, weekly demos, and weekly reviews make sure everyone is on the same page and can raise their concerns.",
+    title: "Testing & Auditing",
+    description:
+      "We conduct comprehensive testing and third-party security audits to ensure your smart contracts are secure and ready for deployment.",
   },
   {
     id: "#5",
-    title: "Code reviews",
-    description: "Code reviews before release help detect issues like memory leaks, file leaks, performance signs, and general bad smells",
+    title: "Frontend Integration",
+    description:
+      "Our developers create user-friendly Web3 interfaces that connect seamlessly with your blockchain infrastructure and smart contracts.",
   },
   {
     id: "#6",
-    title: "Iterative delivery",
-    description: "We divide the implementation process into several checkpoints rather than a single deadline.",
+    title: "Deployment & Support",
+    description:
+      "We manage the mainnet deployment process and provide ongoing technical support to ensure your blockchain solution runs smoothly.",
   },
 ];
 
 export const resources: ResourceProps[] = [
   {
-    title: "Feature Resource",
-    description: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    title: "DeFi Development",
+    description:
+      "Building Secure and Scalable DeFi Protocols: A Comprehensive Guide",
     image: "/img/resources/resource-1.jpg",
   },
   {
-    title: "Feature Resource",
-    description: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    title: "Smart Contracts",
+    description:
+      "Best Practices for Smart Contract Development and Security Auditing",
     image: "/img/resources/resource-2.jpg",
   },
   {
-    title: "Feature Resource",
-    description: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    title: "NFT Platforms",
+    description:
+      "How to Create a Successful NFT Marketplace: From Concept to Launch",
     image: "/img/resources/resource-3.jpg",
   },
   {
-    title: "Feature Resource",
-    description: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    title: "Web3 Integration",
+    description:
+      "Enterprise Guide to Integrating Web3 Technologies with Legacy Systems",
     image: "/img/resources/resource-4.jpg",
   },
   {
-    title: "Feature Resource",
-    description: "How to Build a Scalable Application up to 1 Million Users on AWS",
+    title: "Blockchain Scaling",
+    description:
+      "Advanced Techniques for Building High-Performance Blockchain Applications",
     image: "/img/resources/resource-5.jpg",
   },
 ];

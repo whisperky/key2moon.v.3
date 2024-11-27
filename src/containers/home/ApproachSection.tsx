@@ -14,7 +14,7 @@ export const ApproachSection = () => {
       py="89px"
       bg="#F7F7FA"
       borderY="1px solid #E7DAED"
-      px="15%"
+      px={{ sm: "5%", md: "10%", lg: "15%" }}
     >
       <Flex
         position="relative"
@@ -33,8 +33,8 @@ export const ApproachSection = () => {
       </Flex>
 
       <Grid
-        templateColumns="repeat(2, 1fr)"
-        gap="35px"
+        templateColumns={{ md: "repeat(1, 1fr)", lg: "repeat(2, 1fr)" }}
+        gap={{ md: "10px", lg: "35px" }}
         justifyContent="center"
         alignItems="center"
       >

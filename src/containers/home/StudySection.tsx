@@ -1,9 +1,9 @@
-import { Button, Flex, Text, Image } from "@chakra-ui/react";
+import { Button, Flex, Text } from "@chakra-ui/react";
 
 import { TitleText } from "@/components/texts";
 import { GradLine, ArrowUpIcon, ArrowDownIcon } from "@/components/icons";
 
-import { studies, StudyProps } from "@/data/features";
+import { studies } from "@/data/features";
 import { StudyCard } from "@/components/cards/StudyCard";
 
 export const StudySection = () => {
@@ -14,7 +14,7 @@ export const StudySection = () => {
       py="89px"
       bg="#F7F7FA"
       borderY="1px solid #E7DAED"
-      px="15%"
+      px={{ base: "5%", xl: "15%" }}
     >
       <Flex
         position="relative"
@@ -22,7 +22,13 @@ export const StudySection = () => {
         alignItems="center"
         justifyContent="center"
       >
-        <Flex position="absolute" top="-200px" left="-50px" alignItems="end">
+        <Flex
+          position="absolute"
+          top="-200px"
+          left="-50px"
+          alignItems="end"
+          display={{ base: "none", md: "flex" }}
+        >
           <ArrowUpIcon />
           <Flex
             w="18px"
@@ -31,7 +37,12 @@ export const StudySection = () => {
             borderRadius="50%"
           />
         </Flex>
-        <Flex position="absolute" top="-240px" right="-50px">
+        <Flex
+          position="absolute"
+          top="-240px"
+          right="-50px"
+          display={{ base: "none", md: "flex" }}
+        >
           <ArrowDownIcon />
         </Flex>
         <GradLine />

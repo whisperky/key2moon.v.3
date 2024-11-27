@@ -1,6 +1,6 @@
 "use client";
 
-import { Flex, Text, Image } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 
 import { GradLine } from "@/components/icons";
 import { TitleText } from "@/components/texts";

@@ -1,8 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { Flex, Button, Image, Text, Grid } from "@chakra-ui/react";
-import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
+import { Flex, Image, Text, Grid } from "@chakra-ui/react";
 import Slider from "@ant-design/react-slick";
 
 import { customers } from "@/data/features";
@@ -20,13 +19,35 @@ export const CustomerSlider = () => {
     sliderRef.current?.slickPrev();
   };
 
-  var settings = {
+  const settings = {
     dots: false,
     dotsClass: "slick-dots slick-thumb",
     infinite: true,
     arrows: false,
     centerMode: true,
-    centerPadding: "250px",
+    responsive: [
+      {
+        breakpoint: 1921,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "200px",
+        },
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "20px",
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "0",
+        },
+      },
+    ],
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 3000,
@@ -38,7 +59,7 @@ export const CustomerSlider = () => {
   };
 
   return (
-    <Flex alignItems="center" gap="50px">
+    <Flex alignItems="center" gap={{ base: "10px", md: "50px" }}>
       <ArrowBtn onClick={slickPrev} arrowMode="left" mb="120px" />
 
       <Flex direction="column" w="100%" alignItems="center">
@@ -50,7 +71,7 @@ export const CustomerSlider = () => {
             lineHeight="36px"
             textAlign="center"
             maxW="535px"
-            h="180px"
+            h={{ base: "330px", sm: "180px" }}
             transition="all 0.3s ease"
           >
             {customers[activeSlide].description}
@@ -58,12 +79,14 @@ export const CustomerSlider = () => {
 
           <Image
             position="absolute"
+            display={{ base: "none", md: "block" }}
             left="-70px"
             src="/img/icons/left-dot.png"
             alt="left-dot"
           />
           <Image
             position="absolute"
+            display={{ base: "none", md: "block" }}
             right="-70px"
             bottom="10px"
             src="/img/icons/right-dot.png"

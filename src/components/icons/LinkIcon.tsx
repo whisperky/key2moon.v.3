@@ -17,6 +17,9 @@ export const LinkIcon = ({
         color="#1A202C"
         borderRadius="full"
         boxShadow="0px 4px 14px 0px #00000026"
+        _hover={{
+          bg: "#F1F1F5",
+        }}
       >
         {icon}
       </Icon>

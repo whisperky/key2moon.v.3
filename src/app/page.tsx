@@ -28,20 +28,20 @@ export default function Home() {
         alignItems="center"
       >
         <Banner />
-        <Services />
+        <Services id="portfolio" />
         <TrustedSection />
         <RecommendSection />
         <ImpactSection />
         <StudySection />
-        <SolutionsSection />
+        <SolutionsSection id="about" />
         <ApproachSection />
         <TechSection />
         <WorkflowSection />
-        <ResourceSection />
+        <ResourceSection id="blog" />
         <HireSection />
       </Flex>
 
-      <Footer />
+      <Footer id="contact" />
     </Flex>
   );
 }

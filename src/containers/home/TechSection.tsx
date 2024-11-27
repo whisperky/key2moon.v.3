@@ -13,8 +13,8 @@ export const TechSection = () => {
     <Flex
       direction="column"
       w="100%"
-      py="89px"
-      px="15%"
+      py={{ base: "40px", md: "89px" }}
+      px={{ base: "5%", md: "15%" }}
       borderBottom="1px solid #E7DAED"
     >
       <Flex
@@ -25,14 +25,19 @@ export const TechSection = () => {
       >
         <GradLine />
 
-        <TitleText textAlign="center" pb="38px">
+        <TitleText textAlign="center" pb={{ base: "24px", md: "38px" }}>
           Our <br />
           <Text as="span" fontWeight="700">
             Tech Stack
           </Text>
         </TitleText>
 
-        <Flex gap="48px">
+        <Flex
+          gap={{ base: "24px", md: "48px" }}
+          flexWrap="wrap"
+          justify="center"
+          width="100%"
+        >
           {[
             "Backend",
             "Frontend",

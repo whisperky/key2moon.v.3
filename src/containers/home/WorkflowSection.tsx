@@ -24,28 +24,44 @@ export const WorkflowSection = () => {
         </TitleText>
 
         <Flex
+          direction={{ base: "column", lg: "row" }}
           position="relative"
           w="80%"
           mx="10%"
-          my="220px"
+          my={{ base: 20, lg: "220px" }}
           justifyContent="center"
           alignItems="center"
         >
-          <Flex h="2px" w="100%" bg="#F76680" />
+          <Flex
+            h={{ base: "100%", lg: "2px" }}
+            w={{ base: "2px", lg: "100%" }}
+            bg="#F76680"
+          />
           {processSteps.map((step, index) => (
             <Flex
               key={index}
               direction="column"
-              position="absolute"
+              position={{ base: "relative", lg: "absolute" }}
               alignItems="center"
-              gap="15px"
-              left={`calc(50% - ${(Math.floor(index / 2) - 1) * 35 + "%"} - 160px + ${index % 2 === 0 ? "-30px" : "30px"})`}
-              top={index % 2 === 0 ? "-193px" : "20px"}
+              gap={{ base: 0, lg: "15px" }}
+              left={{
+                base: 0,
+                lg: `calc(50% + ${(Math.floor(index / 2) - 1) * 35 + "%"} - 160px + ${index % 2 === 0 ? "-30px" : "30px"})`,
+              }}
+              top={{ base: 0, lg: index % 2 === 0 ? "-193px" : "30px" }}
             >
-              {index % 2 !== 0 && <Flex w="2px" h="40px" bg="#F76680" />}
+              <Flex
+                w="2px"
+                h="40px"
+                bg="#F76680"
+                display={{
+                  base: "block",
+                  lg: index % 2 === 0 ? "none" : "block",
+                }}
+              />
               <Card.Root
-                maxW="320px"
-                h="160px"
+                maxW="300px"
+                h="170px"
                 direction="column"
                 p="22px 24px"
                 border="1px solid #E7DAED"
@@ -76,10 +92,24 @@ export const WorkflowSection = () => {
                   </Text>
                 </Card.Body>
               </Card.Root>
-              {index % 2 === 0 && <Flex w="2px" h="40px" bg="#F76680" />}
+              <Flex
+                display={{
+                  base: "block",
+                  lg: index % 2 === 0 ? "block" : "none",
+                }}
+                w="2px"
+                h="40px"
+                bg="#F76680"
+              />
             </Flex>
           ))}
-          <Image src="/img/icons/cup.png" alt="workflow" w="42px" h="42px" />
+          <Image
+            src="/img/icons/cup.png"
+            alt="workflow"
+            w="42px"
+            h="42px"
+            m="10px"
+          />
         </Flex>
       </Flex>
     </Flex>
